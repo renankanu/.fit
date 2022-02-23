@@ -1,0 +1,8 @@
+#! /bin/bash
+
+sudo chmod +x ~/.fit/fit
+
+if [ -f /usr/local/bin/fit ]; then
+    sudo rm /usr/local/bin/fit
+fi
+sudo ln -s ~/.fit/fit /usr/local/bin/fit
