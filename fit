@@ -4,3 +4,16 @@
 if [ $1 == 'echo' ]; then
     echo 'Fit successful, You can now use fit!'
 fi
+
+#docker-up
+if [ $1 == 'docker-up' ]; then
+    cd ~/.fit
+    docker-compose up -d
+fi
+
+#docker-down
+if [ $1 == 'docker-down' ]; then
+    docker rm -f $(docker ps -aq)
+fi
+
+
