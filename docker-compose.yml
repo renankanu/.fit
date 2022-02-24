@@ -12,3 +12,8 @@ services:
       - /kn_fit/data/mysql:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
+  
+networks:
+  default:
+    external:
+      name: kn-fit-network
