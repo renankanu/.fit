@@ -12,7 +12,7 @@ services:
       - ${MYSQL_VOLUME}:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: fit_db
+      MYSQL_DATABASE: kn_fit_database
   
   adminer:
     image: adminer
