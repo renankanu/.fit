@@ -1,0 +1,1 @@
+CREATE SCHEMA `kn_fit_database` DEFAULT CHARACTER SET utf8 ;
