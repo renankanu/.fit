@@ -1,0 +1,12 @@
+INSERT INTO `kn_fit_database`.`muscle_group` (`name`) VALUES ('Bíceps');
+INSERT INTO `kn_fit_database`.`muscle_group` (`name`) VALUES ('Tríceps');
+INSERT INTO `kn_fit_database`.`muscle_group` (`name`) VALUES ('Glúteos');
+INSERT INTO `kn_fit_database`.`muscle_group` (`name`) VALUES ('Anteriores');
+INSERT INTO `kn_fit_database`.`muscle_group` (`name`) VALUES ('Abdômen');
+INSERT INTO `kn_fit_database`.`muscle_group` (`name`) VALUES ('Trapézio');
+INSERT INTO `kn_fit_database`.`muscle_group` (`name`) VALUES ('Posteriores');
+INSERT INTO `kn_fit_database`.`muscle_group` (`name`) VALUES ('Tibial e Fibular');
+INSERT INTO `kn_fit_database`.`muscle_group` (`name`) VALUES ('Antebraço');
+INSERT INTO `kn_fit_database`.`muscle_group` (`name`) VALUES ('Lombar');
+INSERT INTO `kn_fit_database`.`muscle_group` (`name`) VALUES ('Panturrilha');
+INSERT INTO `kn_fit_database`.`muscle_group` (`name`) VALUES ('Costas');

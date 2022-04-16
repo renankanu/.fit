@@ -2,12 +2,12 @@ CREATE TABLE IF NOT EXISTS `kn_fit_database`.`student` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `full_name` VARCHAR(70) NOT NULL,
   `email` VARCHAR(50) NOT NULL,
-  `called_by` VARCHAR(70) NULL,
+  `called_by` VARCHAR(70) NULL DEFAULT NULL,
   `password` CHAR(64) NOT NULL,
-  `personal_training_id` INT UNSIGNED NOT NULL,
   `create_time` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
   `update_time` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`),
+  `personal_training_id` INT UNSIGNED NOT NULL,
+  PRIMARY KEY (`id`, `personal_training_id`),
   UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE,
   UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE,
   INDEX `fk_student_personal_training_idx` (`personal_training_id` ASC) VISIBLE,
@@ -17,4 +17,5 @@ CREATE TABLE IF NOT EXISTS `kn_fit_database`.`student` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4;
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci
