@@ -1,8 +1,10 @@
 CREATE TABLE IF NOT EXISTS `kn_fit_database`.`student` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `avatar` VARCHAR(45) NULL,
   `full_name` VARCHAR(70) NOT NULL,
   `email` VARCHAR(50) NOT NULL,
   `called_by` VARCHAR(70) NULL DEFAULT NULL,
+  `gender` ENUM('female', 'male', 'other') NOT NULL,
   `password` CHAR(64) NOT NULL,
   `create_time` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
   `update_time` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
