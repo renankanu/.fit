@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS `kn_fit_database`.`personal_training` (
   `email` VARCHAR(50) NOT NULL,
   `password` CHAR(64) NOT NULL,
   `cref_type` ENUM('CREF9/PR') NOT NULL,
-  `cref_number` INT(32) NOT NULL,
+  `cref_number` INT NOT NULL,
   `create_time` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
   `update_time` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
