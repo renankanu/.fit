@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS `kn_fit_database`.`student` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `avatar` VARCHAR(45) NULL,
+  `avatar` VARCHAR(100) NULL,
   `full_name` VARCHAR(70) NOT NULL,
   `email` VARCHAR(50) NOT NULL,
   `called_by` VARCHAR(70) NULL DEFAULT NULL,

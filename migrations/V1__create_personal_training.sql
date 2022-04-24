@@ -1,5 +1,6 @@
 CREATE TABLE IF NOT EXISTS `kn_fit_database`.`personal_training` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `avatar` VARCHAR(100) NULL,
   `full_name` VARCHAR(70) NOT NULL,
   `email` VARCHAR(50) NOT NULL,
   `password` CHAR(64) NOT NULL,
