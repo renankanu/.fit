@@ -23,7 +23,3 @@ services:
     ports:
       - 8081:8080
   
-networks:
-  default:
-    external:
-      name: kn-fit-network
