@@ -13,7 +13,7 @@ help: ## This help dialog.
 
 db_migration: up_mysql_db ## This is the db migration task.
 	@echo "⊢ Running db:migrate ⊣"
-	@docker run --rm --network="kn-fit-network" -v $(PWD)/migrations:/flyway/sql boxfuse/flyway -url=jdbc:mysql://db?useSSL=false -schemas=kn_fit_database -user=root -password=root migrate
+	@docker run --rm --network="kn-fit-network" -v $(PWD)/migrations:/flyway/sql boxfuse/flyway -url=jdbc:mysql://db -schemas=kn_fit_database -user=root -password=root migrate
 	@echo "Done"
 
 up_mysql_db: ## This is the db up task.
