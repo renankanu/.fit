@@ -16,4 +16,9 @@ if [ $1 == 'docker-down' ]; then
     docker rm -f $(docker ps -aq)
 fi
 
+#docker-exec
+if [ $1 == 'docker-exec' ]; then
+    docker exec -it kn_database bash
+fi
+
 
