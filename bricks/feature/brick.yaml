@@ -23,5 +23,5 @@ environment:
 vars:
   name:
     type: string
-    description: Your name
-    prompt: What is your name?
+    description: Feature name
+    prompt: What is your feature name?
