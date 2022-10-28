@@ -1,6 +1,7 @@
 CREATE TABLE IF NOT EXISTS `kn_fit_database`.`muscle_group` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(30) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_general_ci' NOT NULL,
+  `blocked` TINYINT(1) NULL DEFAULT 0,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE)
 ENGINE = InnoDB
